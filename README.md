@@ -1,6 +1,6 @@
 # Today I Learned by Lalo\*
 
-This journal has as its content the most important information about my day by day lectures. I am starting with a resume of "Clean Code" as one of our mentors told us. The content of this journal is not just React Native related, but I am also reading stuff like best practices and updates of JavaScript and its libraries. I am using in one of my applications (ConferenceApp).
+This journal has as its content the most important information about my day by day lectures. I am starting with a resume of "Clean Code" as one of our mentors told us. The content of this journal is not just React Native related, but I am also reading stuff like best practices and updates of JavaScript and its libraries. I am using in one of my applications (ConferenceApp) a library called RN UI Kitten and here I will also cover my learning curve.
 
 ## Week 0
 
@@ -20,6 +20,28 @@ In the following lines I will be talking about how you can implement "good code"
    - The less, the better; make the names of the variables short and so: explicit and clear
 
 ### Fri 24, July 2020 {Clean Code}
+
+3. In the case of functions, their names should be descriptive and in this case, it does not matter if the name is a little long.
+
+   - Avoid excessive nesting
+   - Avoid switch instructions inside on abstract classes (factor + strategy)
+   - Should have 2 params as maximum, 3 if needed
+   - Avoid output params, it is better to build a function which returns a value (or call a class function of the object that is changing)
+   - Avoid boolean args since the function has two states (false and true); it is better to actually handle each boolean value in a single specific function for it
+   - Functions should just do what their name is telling us. If it is 'checkPassword' then it should ounly validate the password and do not nest another function to 'initializeSession', for example.
+   - All these rules are way too hard to follow from first instance buuut...
+   - [...] Keep working, only with practice and with iterative work it will get better!
+
+4. Comments inside the code are only viable when you cannot express with code. There are several comments that might me helpful like
+
+   - Legal comments (copyright)
+   - Informative comments about what will be returning the function.
+   - Explain an intention, a decision or even a warning.
+   - When using third-party libraries (because we cannot change the naming conventions for functions, for example)
+   - TODO comments
+   - Comments inside public API's (javadoc)
+
+We can say that an incorrect comment are these ones that still after reading it, you cannot understand them or even there are holes in the explanation, redundant comments, etc.
 
 ## Week 1
 
