@@ -45,7 +45,28 @@ We can say that an incorrect comment are these ones that still after reading it,
 
 ## Week 1
 
-### Mon 27, July 2020 _[Reading topic or title]_
+### Mon 27, July 2020 {Clean Code}
+
+5. When it comes about the format of the several files we might have all in our project, these files should not exceed 200 lines (average) and 500 lines as a maximum limit. 
+
+   - Classes should have a descriptive title
+   - We can partially understand the class with the top methods without having to know details.
+   - We should separate blocks of code with a single space.
+   - Variables should be declared the closest to where they are being used. Instance variables (variables of classes) should be declared at the top because they are being used in the whole class.
+   - Horizonal scroll to visualize code should not be a thing in any project.
+   - Make sure your code is well idented.
+
+Is important to follow up rules when the code is being shared with other developers so they can follow up easily your code.
+
+6. As a dev, you should abstract data and know its implementation. As an example: classes hiddens their intern implementation while data structures actually expose it. You should follow up this Demeter's Law:
+
+   - Only invoke functions within itself.
+   - Invoke local variables.
+   - Invoke an arg.
+   - Invoke an instance of the variable.
+   - Should not invoke object functions returned by the call by any other class.
+
+It is important to know that this law only applies to objects and not to data simple structures. 
 
 ### Tue 28, July 2020 _[Reading topic or title]_
 
