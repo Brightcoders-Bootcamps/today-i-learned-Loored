@@ -41,13 +41,13 @@ In the following lines I will be talking about how you can implement "good code"
    - TODO comments
    - Comments inside public API's (javadoc)
 
-We can say that an incorrect comment are these ones that still after reading it, you cannot understand them or even there are holes in the explanation, redundant comments, etc.
+We can say that an incorrect comment are these ones that still after reading it, you cannot understand them or even there are holes on the explanation, redundant comments, etc.
 
 ## Week 1
 
 ### Mon 27, July 2020 {Clean Code}
 
-5. When it comes about the format of the several files we might have all in our project, these files should not exceed 200 lines (average) and 500 lines as a maximum limit. 
+5. When it comes about the format of the several files we might have all in our project, these files should not exceed 200 lines (average) and 500 lines as a maximum limit.
 
    - Classes should have a descriptive title
    - We can partially understand the class with the top methods without having to know details.
@@ -56,9 +56,9 @@ We can say that an incorrect comment are these ones that still after reading it,
    - Horizonal scroll to visualize code should not be a thing in any project.
    - Make sure your code is well idented.
 
-Is important to follow up rules when the code is being shared with other developers so they can follow up easily your code.
+It is important to follow up rules when the code is being shared with other developers so they can follow up easily your code.
 
-6. As a dev, you should abstract data and know its implementation. As an example: classes hiddens their intern implementation while data structures actually expose it. You should follow up this Demeter's Law:
+6. As a dev, you should abstract the data and know its implementation. As an example: classes hiddens their intern implementation while data structures actually exposes it. You should follow up this Demeter's Law:
 
    - Only invoke functions within itself.
    - Invoke local variables.
@@ -66,8 +66,12 @@ Is important to follow up rules when the code is being shared with other develop
    - Invoke an instance of the variable.
    - Should not invoke object functions returned by the call by any other class.
 
-It is important to know that this law only applies to objects and not to data simple structures. 
+It is important to know that this law only applies to objects and not to data simple structures.
 
-### Tue 28, July 2020 _[Reading topic or title]_
+### Tue 28, July 2020 {clean Code}
+
+7. If we use third API services, we should generate unit tests for each interface to verify that we understand how does they work and catch up if they behave as we expect. This is so important because this lead us to also verify if the newer versions keep compatibility with the components/methods/etc we are using from that library.
+
+Today I did not read that much because I am focusing in developing the recetarioApp and de conferencesApp
 
 ### Wed 29, July 2020 _[Reading topic or title]_
